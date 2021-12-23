@@ -1,0 +1,328 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - fine
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: start_interview
+  examples: |
+    - I want to start the interview
+    - Let's Start
+    - Please Start
+    - yes sure
+    - ofcourse
+    - yes please
+    - I think iam ready
+
+- intent: answer_1
+  examples: |
+    - [DML]{"entity":"a1"}
+    - [Query]{"entity":"a1"}
+    - [Relational Schema]{"entity":"a1"}
+    - [DDL]{"entity":"a1"}
+    - [Data Definition Language]{"entity":"a1"}
+
+
+- intent: answer_2
+  examples: |
+    - [Conceptual Level]{"entity":"a2"}
+    - [Physical Level]{"entity":"a2"}
+    - [File Level]{"entity":"a2"}
+    - [Logical Level]{"entity":"a2"}
+
+
+- intent: answer_3
+  examples: |
+    - [Data Bank Administrator]{"entity":"a3"}
+    - [Database Administrator]{"entity":"a3"}
+    - [Data Administrator]{"entity":"a3"}
+    - [None of the above]{"entity":"a3"}
+
+- intent: answer_4
+  examples: |
+    - [Delete]{"entity":"a4"}
+    - [Remove]{"entity":"a4"}
+    - [Drop]{"entity":"a4"}
+    - [All of the above]{"entity":"a4"}
+
+- intent: answer_5
+  examples: |
+    - [Savepoint]{"entity":"a5"}
+    - [Commit]{"entity":"a5"}
+    - [Rollback]{"entity":"a5"}
+    - [Both A & B]{"entity":"a5"}
+
+- intent: answer_6
+  examples: |
+    - [chief network]{"entity":"a6"}
+    - [prime network]{"entity":"a6"}
+    - [prior network]{"entity":"a6"}
+    - [overlay network]{"entity":"a6"}
+
+- intent: answer_7
+  examples: |
+    - [unicast network]{"entity":"a7"}
+    - [broadcast network]{"entity":"a7"}
+    - [multicast network]{"entity":"a7"}
+    - [none of the mentioned]{"entity":"a7"}
+
+- intent: answer_8
+  examples: |
+    - [Circuit switching]{"entity":"a8"}
+    - [Data switching]{"entity":"a8"}
+    - [Packet switching]{"entity":"a8"}
+    - [Packet & Circuit switching]{"entity":"a8"}
+
+- intent: answer_9
+  examples: |
+    - [local area network]{"entity":"a9"}
+    - [virtual private network]{"entity":"a9"}
+    - [personal area network]{"entity":"a9"}
+    - [none of the mentioned]{"entity":"a9"}
+
+- intent: answer_10
+  examples: |
+    - [36.8]{"entity":"a10"}
+    - [35.8]{"entity":"a10"}
+    - [35.5]{"entity":"a10"}
+    - [37.8]{"entity":"a10"}
+
+
+- intent: answer_11
+  examples: |
+    - [Empty collection]{"entity":"a11"}
+    - [Underflow]{"entity":"a11"}
+    - [Overflow]{"entity":"a11"}
+    - [Garbage Collection]{"entity":"a11"}
+
+- intent: answer_12
+  examples: |
+    - [1]{"entity":"a12"}
+    - [40]{"entity":"a12"}
+    - [74]{"entity":"a12"}
+    - [-18]{"entity":"a12"}
+
+- intent: answer_13
+  examples: |
+    - [Transaction Control Language]{"entity":"a13"}
+    - [Transaction Central Language]{"entity":"a13"}
+    - [Transmission Control Language]{"entity":"a13"}
+    - [Ternary Control Language]{"entity":"a13"}
+
+- intent: answer_14
+  examples: |
+    - [Primary key]{"entity":"a14"}
+    - [Foreign key{"entity":"a14"}
+    - [Secondary key]{"entity":"a14"}
+    - [None of the above]{"entity":"a14"}
+
+- intent: answer_15
+  examples: |
+    - [Repeater]{"entity":"a15"}
+    - [Gateway]{"entity":"a15"}
+    - [Bridge]{"entity":"a15"}
+    - [Hub]{"entity":"a15"}
+
+- intent: answer_16
+  examples: |
+    - [4]{"entity":"a16"}
+    - [5]{"entity":"a16"}
+    - [8]{"entity":"a16"}
+    - [12]{"entity":"a16"}
+
+- intent: answer_17
+  examples: |
+    - [prompt]{"entity":"a17"}
+    - [kernel]{"entity":"a17"}
+    - [shell]{"entity":"a17"}
+    - [command]{"entity":"a17"}
+
+
+- intent: answer_18
+  examples: |
+    - [To prevent deadlock]{"entity":"a18"}
+    - [To deadlock recovery]{"entity":"a18"}
+    - [To solve the deadlock]{"entity":"a18"}
+    - [None of these]{"entity":"a18"}
+
+- intent: answer_19
+  examples: |
+    - [Windows]{"entity":"a19"}
+    - [MAC]{"entity":"a19"}
+    - [Ms-Dos]{"entity":"a19"}
+    - [None of the above]{"entity":"a19"}
+
+
+- intent: answer_20
+  examples: |
+    - [Mutual exclusion]{"entity":"a20"}
+    - [Hold and wait]{"entity":"a20"}
+    - [Circular wait]{"entity":"a20"}
+    - [No preemption]{"entity":"a20"}
+    - [All of these]{"entity":"a20"}
+
+# - intent: answer_21
+#   examples: |
+#     - Efficient Code
+#     - Code reusability
+#     - Modularity
+#     - Duplicate/Redundant data
+
+# - intent: answer_22
+#   examples: |
+#     - Kotlin
+#     - SmallTalk
+#     - Java
+#     - C++
+
+# - intent: answer_23
+#   examples: |
+#     - It allows code to be written outside classes
+#     - It supports usual declaration of primitive data types
+#     - It does not support pointers
+#     - It doesn’t support all types of inheritance
+
+# - intent: answer_24
+#   examples: |
+#     - Function Overloading
+#     - Function Overriding
+#     - Operator Overloading
+#     - Operator Overriding
+
+# - intent: answer_25
+#   examples: |
+#     - False
+#     - True
+#     - 0
+#     - invalid code
+
+# - intent: answer_26
+#   examples: |
+#     - 92 km
+#     - 60 km
+#     - 94 km
+#     - 96 km
+
+# - intent: answer_27
+#   examples: |
+#     - Rs. 1250
+#     - Rs.1300
+#     - Rs. 1200
+#     - Rs. 1150
+
+
+# - intent: answer_28
+#   examples: |
+#     - antipode
+#     - pole
+#     - equator
+#     - reverse
+
+# - intent: answer_29
+#   examples: |
+#     - Son
+#     - Brother
+#     - Brother-in-law
+#     - Father
+
+# - intent: answer_30
+#   examples: |
+#     - 990
+#     - 900
+#     - 940
+#     - 840
+- intent: dont_know
+  examples: |
+    - I dont know
+    - Cant answer
+    - Im soryy I dont know
+    - dont remember
+
+
+
