@@ -1,34 +1,42 @@
-<!DOCTYPE html>
+{% load static %}
+
+<!doctype html>
 <html lang="en">
+  <head>
+    <link rel="icon" href="{% static '/images/img3.png' %}" type="image/x-icon">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet"
-        href="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.css" />
-</head>
+    <title>Interview world</title>
 
-<body>
+    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+  </head>
+  <body>
+    <center>
+        <h1>INTERVIEW WORLD</h1>
+        <h3>A next gen Interview experience...</h3>
+        <br>
+        <div>
+          <img id="img1" src="{% static '/images/img1.png' %}" alt="">
+        </div>
+        <br>
+        <div class="flex-container">
 
-    <div class="chat-container"></div>
+          <div class="flex-child magenta">
+            Description
+          </div>
+          
+          <div class="flex-child green">
+            <img id="img2" src="{% static '/images/img2.png' %}" alt="">
+            <button class="button" onclick="location.href='chat'"><span>Start Interview</span></button>
+          </div>
+          
+        </div>
 
-    <script
-        src="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.js" />
-    </script>
-    <script type="text/javascript">
-        var chatroom = new window.Chatroom({
-            host: "http://localhost:5005",
-            title: "moodbhai",
-            container: document.querySelector(".chat-container"),
-            welcomeMessage: "hello",
-            speechRecognition: "en-US",
-            voiceLang: "en-US"
-        });
-        chatroom.openChat();
-    </script>
+        <br>
+        
 
-</body>
+    </center>
+    
 
+    
+  </body>
 </html>

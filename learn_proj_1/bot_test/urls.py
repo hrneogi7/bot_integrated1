@@ -1,5 +1,8 @@
 from django.urls import path
 
-from .views import index
+from .views import chatroom,index
 
-urlpatterns=[path('chat',index,name='index')]
+urlpatterns=[
+    path('',index,name='index'),
+    path('chat',chatroom,name='chatroom')
+]
