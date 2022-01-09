@@ -1,0 +1,57 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InterviewG - description</title>
+    <link rel="icon" href="{% static '/images/img3.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+        body {
+            width: 100vw;
+            height: 90vh;
+            background-color: #FFBD33;
+        }
+        .container{
+            font-family: serif;
+            font-weight: bold;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="blue darken-3">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">InterviewNG</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/">Home</a></li>
+                <li class="active"><a>Description</a></li>
+                <li><a href="chat">Interview</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>What it solves..</h1>
+        <p>
+            With the meteoric rise of the IT industry and its democratization, it remains one of the most lucrative job destinations across the board. 
+            With the multitude of aspiring candidates, who are aiming to kickstart their IT careers every year, it has become essential for a smart
+            and efficient recruitment process that can ensure fair evaluation criteria. In this project, we have created a Voice Bot, capable of taking 
+            campus interviews in English. The Bot has been built using RASA open-source framework (RASA 3.x), and it is capable of conducting rapid-fire 
+            interviews on common subjects of Computer Science, both textually and by voice. The bot functions by asking 20 MCQ questions on relevant subjects 
+            and grades the candidates based on their responses. The grade is then displayed after the interview round gets over. The grade evaluated by the
+            bot can be used to screen potential employees from the candidate population for further recruitment processes. We hope that the bot will be valuable for Hiring Managers 
+            and also for candidates who can take interviews at their ease.
+        </p>
+    </div>
+</body>
+
+</html>

@@ -6,3 +6,6 @@ def index(request):
     
 def chatroom(request):
     return render(request, "chatroom.html")
+
+def description(request):
+    return render(request, "description.html")
